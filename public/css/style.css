@@ -1,7 +1,7 @@
 
   #nav {
-    background-color: #222;
-    border-bottom: 4px solid #222;
+    background-color: #333;
+    border-bottom: 4px solid #333;
     padding: 15px 50px;
     display: flex;
     justify-content: flex-end;
@@ -48,8 +48,8 @@
 
   #footer {
     height: 50px;
-    background-color: #222;
-    border-top: 4px solid #222;
+    background-color: #333;
+    border-top: 4px solid #333;
     color: #f8f8f8;
     position: fixed;
     display: flex;
