@@ -1,0 +1,111 @@
+
+  #nav {
+    background-color: #222;
+    border-bottom: 4px solid #222;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #nav #logo-url {
+    margin: auto;
+    margin-left: 0;
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  #nav a {
+    color: #fcf9fc;
+    text-decoration: none;
+    margin: 12px;
+    transition: .5s;
+  }
+
+  #nav a:hover {
+    color: #d621c77a;
+  }
+
+  * {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .main-container {
+    margin: 50px;
+    min-height: 250px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  #footer {
+    height: 50px;
+    background-color: #222;
+    border-top: 4px solid #222;
+    color: #f8f8f8;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  #historic-table {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #historic-table-heading,
+  #historic-table-rows,
+  .historic-table-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #historic-table-heading {
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 3px solid #333;
+  }
+  .historic-table-row {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid #CCC;
+  }
+  #historic-table-heading div,
+  .historic-table-row div {
+    width: 19%;
+  }
+  #historic-table-heading .order-id,
+  .historic-table-row .order-number {
+    width: 5%;
+  }
+  select {
+    padding: 12px 6px;
+    margin-right: 12px;
+  }
+  .delete-btn {
+    background-color: #222;
+    color:#fcba03;
+    font-weight: bold;
+    border: 2px solid #222;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .delete-btn:hover {
+    background-color: transparent;
+    color: #222;
+  }
