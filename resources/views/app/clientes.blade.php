@@ -1,1 +1,4 @@
-<h3>Clientes (view)</h3>
+@section('titulo', 'Clientes')
+@include('components.header')
+@include('components.navbar')
+@include('components.footer')

@@ -1,7 +1,6 @@
-@component('components.header')
-@endcomponent
-@component('components.navbar')
-@endcomponent
+@section('titulo', 'Login')
+@include('components.header')
+@include('components.navbar')
 <div id="container">
     <div id="container-login">
         <div id="wrap-login">
@@ -11,10 +10,10 @@
                 </span>
                 <span id="login-form-title"> Bem vindo </span>
                 <div id="wrap-input">
-                    <input id="input" type="email" placeholder="E-mail"/>
+                    <input id="input" type="email" placeholder="E-mail" />
                 </div>
                 <div id="wrap-input">
-                    <input id="input" type="password" placeholder="Senha"/>
+                    <input id="input" type="password" placeholder="Senha" />
                 </div>
                 <div id="container-login-form-btn">
                     <button id="login-form-btn">Login</button>
@@ -23,3 +22,4 @@
         </div>
     </div>
 </div>
+@include('components.footer')

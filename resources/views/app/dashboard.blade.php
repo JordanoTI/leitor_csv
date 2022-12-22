@@ -1,1 +1,4 @@
-<h3>Dashboard (view)</h3>
+@section('titulo', 'Dashboard')
+@include('components.header')
+@include('components.navbar')
+@include('components.footer')

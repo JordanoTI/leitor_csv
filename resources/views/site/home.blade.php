@@ -1,6 +1,4 @@
-@component('components.header')
-@endcomponent
-@component('components.navbar')
-@endcomponent
-@component('components.footer')
-@endcomponent
+@section('titulo', 'Home')
+@include('components.header')
+@include('components.navbar')
+@include('components.footer')

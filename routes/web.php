@@ -21,6 +21,11 @@ Route::prefix('/app')->group(function () {
     Route::get('/clientes', 'ClientesController@clientes')->name('app.clientes');
     Route::get('/dashboard', 'DashboardController@dashboard')->name('app.dashboard');
     Route::get('/historico', 'HistoricoController@historico')->name('app.historico');
+    Route::get('/origem', 'OrigemController@origem')->name('app.origem');
+});
+
+Route::fallback(function () {
+    echo 'A rota acessada não existe. <a href="' . route('site.home') . '">clique aqui</a> para voltar a pagina inicial';
 });
 
 // Route::get('/origem/{ftp}/{usuario}/{senha}/{porta}', function (string $ftp, string $usuario, string $senha, int $porta) {
