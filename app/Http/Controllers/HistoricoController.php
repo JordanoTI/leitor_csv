@@ -8,6 +8,6 @@ class HistoricoController extends Controller
 {
     public function historico()
     {
-        return view('historico');
+        return view('site.historico');
     }
 }

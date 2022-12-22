@@ -15,6 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@home');
 
-Route::get('/dashboard', 'DashboardController@dashboard');
+Route::get('/login', function () {
+    echo 'Login';
+});
 
-Route::get('/historico', 'HistoricoController@historico');
+Route::prefix('/app')->group(function () {
+    Route::get('/clientes', 'ClientesController@clientes');
+    Route::get('/dashboard', 'DashboardController@dashboard');
+    Route::get('/historico', 'HistoricoController@historico');
+});
+
+// Route::get('/origem/{ftp}/{usuario}/{senha}/{porta}', function (string $ftp, string $usuario, string $senha, int $porta) {
+//     echo "$ftp - $usuario - $senha - $porta";
+// })->where('porta', '[0-9]+');
