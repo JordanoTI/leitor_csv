@@ -13,16 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@home');
+Route::get('/', 'HomeController@home')->name('site.home');
 
-Route::get('/login', function () {
-    echo 'Login';
-});
+Route::get('/login', 'LoginController@login')->name('site.login');
 
 Route::prefix('/app')->group(function () {
-    Route::get('/clientes', 'ClientesController@clientes');
-    Route::get('/dashboard', 'DashboardController@dashboard');
-    Route::get('/historico', 'HistoricoController@historico');
+    Route::get('/clientes', 'ClientesController@clientes')->name('app.clientes');
+    Route::get('/dashboard', 'DashboardController@dashboard')->name('app.dashboard');
+    Route::get('/historico', 'HistoricoController@historico')->name('app.historico');
 });
 
 // Route::get('/origem/{ftp}/{usuario}/{senha}/{porta}', function (string $ftp, string $usuario, string $senha, int $porta) {
